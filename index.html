@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Калькулятор</h1>
+    <p>Мое первое приложение, написанное с использованием HTML/CSS и JavaScript</p>
+    <hr>
+    <div class="wrapper"> 
+        <div class="calculator">
+            <div class="input-wrapper">
+                <div id="history" class="history"></div>
+                <input id="result" class="result" value="" />
+            </div>
+            <div class="keyboard">
+                <div class="keyboard-row">
+                    <button class="key math-operation-outline">&#8730;x</button>
+                    <button id="sqr" class="key math-operation-outline">x<sup>2</sup></button>
+                    <button class="key reset">C</button>
+                    <button class="key erase">&#9003;</button>
+                </div>
+
+                <div class="keyboard-row">
+                    <button class="key">7</button>
+                    <button class="key">8</button>
+                    <button class="key">9</button>
+                    <button class="key math-operation">/</button>
+                </div>
+
+                <div class="keyboard-row">
+                    <button class="key">4</button>
+                    <button class="key">5</button>
+                    <button class="key">6</button>
+                    <button class="key math-operation math-operation">*</button>
+                </div>
+
+                <div class="keyboard-row">
+                    <button id="digit1" class="key">1</button>
+                    <button id="digit2" class="key">2</button>
+                    <button id="digit3" class="key">3</button>
+                    <button id="sub" class="key math-operation math-operation">-</button>
+                </div>
+
+                <div class="keyboard-row">
+                    <button id="dot" class="key">.</button>
+                    <button class="key">0</button>
+                    <button id="calculate" class="key">=</button>
+                    <button id="add" class="key math-operation math-operation-base">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="actions.js"></script>
+    <script src="dom.js"></script>
+</body>
+</html>
